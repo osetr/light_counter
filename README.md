@@ -1,1 +1,1 @@
-# easy_counter
+# light_counter
