@@ -1,0 +1,14 @@
+version: "3"   
+
+volumes:
+        postgres_data:
+
+services:
+        app:
+                build: .
+                container_name: app
+                restart: always
+                ports:
+                        - "8000:8000"
+                entrypoint: /bin/bash -c "./entrypoint.sh;"
+                network_mode: host
