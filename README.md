@@ -1,1 +1,3 @@
 # light_counter
+
+Web service, that counts users which opened current page of website and display counter on the same page. To distinguish users, the service checks their ips. But be careful, any user can be counted several times, because of changing dymenic addresses. General amount of visitors is updating every second by ajax requests. The project includes docker-compose you can up for easy untaping on your machine. nginx.conf is an example of configuration for server for the app. The settings help to track error- and accesslogs in appropriate files. Actually this conf is used on real server. You can find site by [lightcounter.ml](https://lightcounter.ml)
